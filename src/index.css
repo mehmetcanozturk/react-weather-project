@@ -5,6 +5,16 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
 
 body {
   margin: 0;
@@ -14,14 +24,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
+  overflow-y: none;
+  overflow-x: none;
 }
-
+#root {
+  height: 100%;
+}
 .app {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .app:before {
   content: "";
@@ -56,8 +70,8 @@ input:focus {
   outline: none;
 }
 .container {
-  max-width: 700px;
-  min-height: 700px;
+  max-width: 80%;
+  height: 650px;
   margin: auto;
   position: relative;
   display: flex;
@@ -99,7 +113,7 @@ h1 {
 }
 .background-image {
   transition: 0.5s;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
