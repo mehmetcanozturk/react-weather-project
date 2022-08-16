@@ -126,12 +126,17 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-
+.container .detail-text {
+  font-size: 14px;
+}
 @media screen and (max-width: 1000px) {
   body {
     height: 1000px;
   }
   .app .search input {
     width: 80%;
+  }
+  .app .bottom {
+    padding: 5px;
   }
 }
