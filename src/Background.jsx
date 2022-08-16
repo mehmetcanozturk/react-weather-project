@@ -2,9 +2,10 @@ import clouds from "./assets/Clouds.jpg"
 import Rain from "./assets/Rain.jpg"
 import Clear from "./assets/Clear.jpg"
 import Mist from "./assets/Mist.jpg"
+import Sunset from "./assets/sunset.jpg"
 
 class Weather {
-    static name = "Clear"
+    static name = "Sunset"
 }
 export default function Background({ data }) {
 
@@ -23,7 +24,8 @@ export default function Background({ data }) {
             return <img src={Clear} alt="" />
         case "Mist":
             return <img src={Mist} alt="" />
-
+        case "Sunset":
+            return <img src={Sunset} alt="" />
         default:
             return null
     }
